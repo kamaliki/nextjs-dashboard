@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   },
   description: 'The official Next.js Learn Dashboard built with App Router.',
   metadataBase: new URL('https://nextjs-dashboard-ten-nu-59.vercel.app/'),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  authors: [{ name: 'Clive K'}],
   openGraph : {
     title: 'Acme Dashboard',
     description: 'The official Next.js Learn Dashboard built with App Router.',
@@ -25,6 +37,13 @@ export const metadata: Metadata = {
     ],
     locale: 'en-US',
     type: 'website',
+    
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Acme Dashboard',
+    description: 'The official Next.js Learn Dashboard built with App Router.',
+    images: ['https://nextjs-dashboard-ten-nu-59.vercel.app/opengraph-image.png'],
   }
   
 };
